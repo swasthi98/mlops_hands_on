@@ -21,7 +21,7 @@ import shutil
 
 # Initialize MLflow
 mlflow.set_tracking_uri('https://c563-34-90-53-119.ngrok-free.app/')
-exp_id = mlflow.get_experiment_by_name("new_experiment").experiment_id
+exp_id = mlflow.get_experiment_by_name("my_experiment").experiment_id
 mlflow.set_experiment(experiment_id=exp_id)
 mlflow.start_run()
 
